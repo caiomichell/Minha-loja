@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Loja</h1>
+        <button id="btn-menu" type="button" aria-expanded="false">Menu</button>
+        <nav id="menu" class="menu">
+            <a href="#vitrine">Produtos</a>
+            <a href="#frete">Frete</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="vitrine" class="container">
+        <h2>Nossos produtos</h2>
+        <div class="produtos">
+            <div class="cartao">
+                <img src="img/caderno.jpg" alt="Caderno de anotações">
+                <h3>Caderno de anotações</h3>
+                <p>R$ 34,90</p>
+            </div>
+            <div class="cartao">
+                <img src="img/caneca.jpg" alt="Caneca de cerâmica">
+                <h3>Caneca de cerâmica</h3>
+                <p>R$ 42,00</p>
+            </div>
+            <div class="cartao">
+                <img src="img/garrafa.jpg" alt="Garrafa térmica">
+                <h3>Garrafa térmica</h3>
+                <p>R$ 89,90</p>
+            </div>
+            <div class="cartao">
+                <img src="img/luminaria.jpg" alt="Luminária de mesa">
+                <h3>Luminária de mesa</h3>
+                <p>R$ 119,90</p>
+            </div>
+            <div class="cartao">
+                <img src="img/organizador.jpg" alt="Organizador de mesa">
+                <h3>Organizador de mesa</h3>
+                <p>R$ 54,90</p>
+            </div>
+            <div class="cartao">
+                <img src="img/mochila.jpg" alt="Mochila casual">
+                <h3>Mochila casual</h3>
+                <p>R$ 149,90</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="frete" class="container">
+        <h2>Calcular frete</h2>
+        <p>Compras a partir de R$ 200,00 têm frete grátis.</p>
+        <label for="valor-compra">Valor da compra (R$):</label>
+        <input type="number" id="valor-compra" min="0" step="0.01" value="150">
+        <button type="button" id="btn-frete">Calcular</button>
+        <p id="aviso-frete"></p>
+    </section>
+
+    <section id="contato" class="container">
+        <h2>Entre em contato</h2>
+        <form id="contato-form">
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" required minlength="2">
+
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" rows="4" required minlength="10"></textarea>
+
+            <button type="submit">Enviar</button>
+            <p id="resposta" aria-live="polite"></p>
+        </form>
+    </section>
+
+
+    <script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+MINHA LOJA - VERSÃO SIMPLES COM FOTOS
+
+Abra index.html no navegador ou no VS Code com Live Server.
+As seis imagens JPG são fotos ilustrativas geradas para o projeto e estão na pasta img.
+HTML, CSS e JavaScript continuam simples.
+O formulário valida os dados localmente, mas não envia e-mail.
